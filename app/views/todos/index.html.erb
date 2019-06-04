@@ -1,0 +1,12 @@
+<h1>Tareas a realizar</h1>
+
+<% @todos.each do |todo| %>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <p class="card-text"><%= todo.description %></p>
+    <p class="card-text"><%= todo.completed %></p>
+  </div>
+</div>
+
+<% end %>
+

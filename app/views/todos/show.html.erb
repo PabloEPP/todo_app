@@ -1,0 +1,9 @@
+<h1>Show</h1>
+
+<h3> <%= @todo.description %> </h3>
+    <% if @todo.completed %>
+    <p>Tarea Completada</p>
+    <% else %>
+    <p>Tarea No Completada</p>
+
+    <% end %>

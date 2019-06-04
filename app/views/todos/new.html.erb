@@ -1,0 +1,9 @@
+<h1>Formulario para crear una nueva Tarea</h1>
+
+<%= form_with model: @todo, local: true do |f| %>
+<%= f.label :description, "Nombre de la Tarea" %>
+<%= f.text_field :description %>
+
+<%= f.submit "Enviar", class:"btn btn-success" %>
+
+<% end %>

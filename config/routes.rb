@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   patch 'todos/:id', to: 'todos#update'
   delete 'todos/:id', to: 'todos#destroy'
   get 'todos/:id/complete', to: 'todos#complete', as: 'completed'
+  root 'todos#index'
 
 end

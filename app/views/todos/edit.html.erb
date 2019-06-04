@@ -1,0 +1,9 @@
+<h1>Editar</h1>
+
+<%= form_with model: @todo, local: true do |f|  %>
+<%= f.label :description, "Nombre To Do" %>
+<%= f.text_field :description %>
+<%= f.label :completed, "Tarea Completada" %>
+<%= f.check_box :completed %>
+<%= f.submit "Enviar" %>
+<% end %>
